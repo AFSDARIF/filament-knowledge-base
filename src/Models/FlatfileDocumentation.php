@@ -245,4 +245,12 @@ class FlatfileDocumentation extends Model implements Documentable
 
         return null;
     }
+    
+    public function resolveRouteBindingQuery($query, $value, $field = null): \Illuminate\Contracts\Database\Eloquent\Builder
+    {
+        return parent::resolveRouteBindingQuery($query, $value, $field)
+            ->where('panel_id', KnowledgeBase::panel()->getId())
+        ;
+    }
+
 }
