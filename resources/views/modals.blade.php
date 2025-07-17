@@ -1,17 +1,17 @@
 @php
     use Filament\Facades\Filament;
 
-    $hasModalPreviews = Filament::getPlugin('guava::filament-knowledge-base')->hasModalPreviews();
-    $hasSlideOverPreviews = Filament::getPlugin('guava::filament-knowledge-base')->hasSlideOverPreviews();
-    $hasModalTitleBreadcrumbs = Filament::getPlugin('guava::filament-knowledge-base')->hasModalTitleBreadcrumbs();
-    $target = Filament::getPlugin('guava::filament-knowledge-base')->shouldOpenDocumentationInNewTab() ? '_blank' : '_self';
-    $articleClass = \Guava\FilamentKnowledgeBase\Facades\KnowledgeBase::panel()->getArticleClass();
+    $hasModalPreviews = Filament::getPlugin('afsdarif::filament-knowledge-base')->hasModalPreviews();
+    $hasSlideOverPreviews = Filament::getPlugin('afsdarif::filament-knowledge-base')->hasSlideOverPreviews();
+    $hasModalTitleBreadcrumbs = Filament::getPlugin('afsdarif::filament-knowledge-base')->hasModalTitleBreadcrumbs();
+    $target = Filament::getPlugin('afsdarif::filament-knowledge-base')->shouldOpenDocumentationInNewTab() ? '_blank' : '_self';
+    $articleClass = \Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase::panel()->getArticleClass();
 @endphp
 
 <div
     x-ignore
     ax-load
-    ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('modals-component', 'guava/filament-knowledge-base') }}"
+    ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('modals-component', 'afsdarif/filament-knowledge-base') }}"
     x-data="modalsComponent()"
 >
     <x-filament::modal id="kb-custom-modal"

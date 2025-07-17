@@ -1,5 +1,5 @@
 <?php
 
-use Guava\FilamentKnowledgeBase\Tests\TestCase;
+use Afsdarif\FilamentKnowledgeBase\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

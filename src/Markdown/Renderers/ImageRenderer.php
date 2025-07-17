@@ -1,6 +1,6 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Markdown\Renderers;
+namespace Afsdarif\FilamentKnowledgeBase\Markdown\Renderers;
 
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\Str;

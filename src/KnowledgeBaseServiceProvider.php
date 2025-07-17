@@ -1,13 +1,13 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase;
+namespace Afsdarif\FilamentKnowledgeBase;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Facades\FilamentAsset;
-use Guava\FilamentKnowledgeBase\Commands\MakeDocumentationCommand;
-use Guava\FilamentKnowledgeBase\Livewire\HelpMenu;
-use Guava\FilamentKnowledgeBase\Livewire\Modals;
-use Guava\FilamentKnowledgeBase\Providers\KnowledgeBasePanelProvider;
+use Afsdarif\FilamentKnowledgeBase\Commands\MakeDocumentationCommand;
+use Afsdarif\FilamentKnowledgeBase\Livewire\HelpMenu;
+use Afsdarif\FilamentKnowledgeBase\Livewire\Modals;
+use Afsdarif\FilamentKnowledgeBase\Providers\KnowledgeBasePanelProvider;
 use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -52,7 +52,7 @@ class KnowledgeBaseServiceProvider extends PackageServiceProvider
                     __DIR__ . '/../dist/js/modals-component.js',
                 ),
             ],
-            package: 'guava/filament-knowledge-base'
+            package: 'afsdarif/filament-knowledge-base'
         );
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Models;
+namespace Afsdarif\FilamentKnowledgeBase\Models;
 
-use Guava\FilamentKnowledgeBase\Facades\KnowledgeBase;
-use Guava\FilamentKnowledgeBase\Filament\Pages\ViewDocumentation;
-use Guava\FilamentKnowledgeBase\Markdown\MarkdownRenderer;
+use Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Filament\Pages\ViewDocumentation;
+use Afsdarif\FilamentKnowledgeBase\Markdown\MarkdownRenderer;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\File;
@@ -53,7 +53,7 @@ class RelationalDocumentation extends Model
             ->toArray()
         ;
         collect(Discover::in(app_path('KnowledgeBasePanel'))
-            ->extending(\Guava\FilamentKnowledgeBase\Pages\Documentation::class)
+            ->extending(\Afsdarif\FilamentKnowledgeBase\Pages\Documentation::class)
             ->get());
     }
 

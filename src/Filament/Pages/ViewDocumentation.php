@@ -1,14 +1,14 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Filament\Pages;
+namespace Afsdarif\FilamentKnowledgeBase\Filament\Pages;
 
 use Filament\Navigation\NavigationItem;
 use Filament\Pages\SubNavigationPosition;
 use Filament\Panel;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Resources\Pages\ViewRecord;
-use Guava\FilamentKnowledgeBase\Facades\KnowledgeBase;
-use Guava\FilamentKnowledgeBase\Filament\Resources\DocumentationResource;
+use Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Filament\Resources\DocumentationResource;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Route as RouteFacade;

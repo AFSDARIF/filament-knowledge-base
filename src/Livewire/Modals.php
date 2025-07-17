@@ -1,14 +1,14 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Livewire;
+namespace Afsdarif\FilamentKnowledgeBase\Livewire;
 
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Facades\Filament;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
-use Guava\FilamentKnowledgeBase\Contracts\Documentable;
-use Guava\FilamentKnowledgeBase\Facades\KnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Contracts\Documentable;
+use Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase;
 use Livewire\Attributes\On;
 use Livewire\Component;
 
@@ -23,7 +23,7 @@ class Modals extends Component implements HasActions, HasForms
 
     public function mount(): void
     {
-        $this->shouldOpenDocumentationInNewTab = Filament::getPlugin('guava::filament-knowledge-base')->shouldOpenDocumentationInNewTab();
+        $this->shouldOpenDocumentationInNewTab = Filament::getPlugin('afsdarif::filament-knowledge-base')->shouldOpenDocumentationInNewTab();
     }
 
     #[On('close-modal')]

@@ -1,11 +1,11 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Actions\Forms\Components;
+namespace Afsdarif\FilamentKnowledgeBase\Actions\Forms\Components;
 
 use Filament\Facades\Filament;
 use Filament\Forms\Components\Actions\Action;
-use Guava\FilamentKnowledgeBase\Contracts\Documentable;
-use Guava\FilamentKnowledgeBase\Facades\KnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Contracts\Documentable;
+use Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase;
 use Illuminate\Support\Arr;
 use Illuminate\Support\HtmlString;
 
@@ -41,14 +41,14 @@ blade);
 //            ->icon($documentable->getIcon())
             ->icon('heroicon-o-question-mark-circle')
             ->when(
-                Filament::getPlugin('guava::filament-knowledge-base')->hasModalPreviews(),
+                Filament::getPlugin('afsdarif::filament-knowledge-base')->hasModalPreviews(),
                 fn (HelpAction $action) => $action
                     ->modalContent(fn () => static::getContentView($documentable))
                     ->modalHeading($documentable->getTitle())
                     ->modalSubmitAction(false)
                     ->modalCancelActionLabel(__('filament-knowledge-base::translations.close'))
                     ->when(
-                        Filament::getPlugin('guava::filament-knowledge-base')->hasSlideOverPreviews(),
+                        Filament::getPlugin('afsdarif::filament-knowledge-base')->hasSlideOverPreviews(),
                         fn (HelpAction $action) => $action->slideOver()
                     ),
                 fn (HelpAction $action) => $action->url($documentable->getUrl())

@@ -1,15 +1,15 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase;
+namespace Afsdarif\FilamentKnowledgeBase;
 
 use Exception;
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Panel;
-use Guava\FilamentKnowledgeBase\Contracts\Documentable;
-use Guava\FilamentKnowledgeBase\Filament\Panels\KnowledgeBasePanel;
-use Guava\FilamentKnowledgeBase\Markdown\MarkdownRenderer;
-use Guava\FilamentKnowledgeBase\Pages\Documentation;
+use Afsdarif\FilamentKnowledgeBase\Contracts\Documentable;
+use Afsdarif\FilamentKnowledgeBase\Filament\Panels\KnowledgeBasePanel;
+use Afsdarif\FilamentKnowledgeBase\Markdown\MarkdownRenderer;
+use Afsdarif\FilamentKnowledgeBase\Pages\Documentation;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\File;

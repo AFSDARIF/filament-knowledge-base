@@ -1,11 +1,11 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Actions;
+namespace Afsdarif\FilamentKnowledgeBase\Actions;
 
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
-use Guava\FilamentKnowledgeBase\Contracts\Documentable;
-use Guava\FilamentKnowledgeBase\Facades\KnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Contracts\Documentable;
+use Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase;
 
 class HelpAction extends Action
 {
@@ -29,11 +29,11 @@ class HelpAction extends Action
             ->label($documentable->getTitle())
             ->icon($documentable->getIcon())
             ->when(
-                Filament::getPlugin('guava::filament-knowledge-base')->hasModalPreviews(),
+                Filament::getPlugin('afsdarif::filament-knowledge-base')->hasModalPreviews(),
                 fn (HelpAction $action) => $action
                     ->alpineClickHandler('$dispatch("open-modal", {id: "' . $documentable->getId() . '"})')
                     ->when(
-                        Filament::getPlugin('guava::filament-knowledge-base')->hasSlideOverPreviews(),
+                        Filament::getPlugin('afsdarif::filament-knowledge-base')->hasSlideOverPreviews(),
                         fn (HelpAction $action) => $action->slideOver()
                     ),
                 fn (HelpAction $action) => $action->url($documentable->getUrl())

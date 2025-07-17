@@ -1,8 +1,8 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Markdown\Parsers;
+namespace Afsdarif\FilamentKnowledgeBase\Markdown\Parsers;
 
-use Guava\FilamentKnowledgeBase\Markdown\MarkdownRenderer;
+use Afsdarif\FilamentKnowledgeBase\Markdown\MarkdownRenderer;
 use League\CommonMark\Parser\Inline\InlineParserInterface;
 use League\CommonMark\Parser\Inline\InlineParserMatch;
 use League\CommonMark\Parser\InlineParserContext;

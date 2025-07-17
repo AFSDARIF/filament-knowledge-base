@@ -1,6 +1,6 @@
 <?php
 
-// config for Guava/KnowledgeBasePanel
+// config for Afsdarif/KnowledgeBasePanel
 return [
     'panel' => [
         'id' => env('FILAMENT_KB_ID', 'knowledge-base'),
@@ -9,7 +9,7 @@ return [
 
     'docs-path' => env('FILAMENT_KB_DOCS_PATH', 'docs'),
 
-    'model' => \Guava\FilamentKnowledgeBase\Models\FlatfileDocumentation::class,
+    'model' => \Afsdarif\FilamentKnowledgeBase\Models\FlatfileDocumentation::class,
 
     'cache' => [
         'prefix' => env('FILAMENT_KB_CACHE_PREFIX', 'filament_kb_'),

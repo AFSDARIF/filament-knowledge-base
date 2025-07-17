@@ -1,8 +1,8 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Concerns;
+namespace Afsdarif\FilamentKnowledgeBase\Concerns;
 
-use Guava\FilamentKnowledgeBase\Contracts\Documentable;
+use Afsdarif\FilamentKnowledgeBase\Contracts\Documentable;
 
 trait HasDocumentable
 {

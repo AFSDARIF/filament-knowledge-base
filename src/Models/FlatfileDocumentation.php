@@ -1,13 +1,13 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Models;
+namespace Afsdarif\FilamentKnowledgeBase\Models;
 
 use Arr;
 use Filament\Navigation\NavigationGroup;
-use Guava\FilamentKnowledgeBase\Contracts\Documentable;
-use Guava\FilamentKnowledgeBase\Facades\KnowledgeBase;
-use Guava\FilamentKnowledgeBase\Filament\Pages\ViewDocumentation;
-use Guava\FilamentKnowledgeBase\Markdown\MarkdownRenderer;
+use Afsdarif\FilamentKnowledgeBase\Contracts\Documentable;
+use Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Filament\Pages\ViewDocumentation;
+use Afsdarif\FilamentKnowledgeBase\Markdown\MarkdownRenderer;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\App;

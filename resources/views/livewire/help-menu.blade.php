@@ -1,11 +1,11 @@
 @php
     use Filament\Facades\Filament;
 
-    $hasModalPreviews = Filament::getPlugin('guava::filament-knowledge-base')->hasModalPreviews();
-    $hasSlideOverPreviews = Filament::getPlugin('guava::filament-knowledge-base')->hasSlideOverPreviews();
-    $hasModalTitleBreadcrumbs = Filament::getPlugin('guava::filament-knowledge-base')->hasModalTitleBreadcrumbs();
-    $target = Filament::getPlugin('guava::filament-knowledge-base')->shouldOpenDocumentationInNewTab() ? '_blank' : '_self';
-    $articleClass = \Guava\FilamentKnowledgeBase\Facades\KnowledgeBase::panel()->getArticleClass();
+    $hasModalPreviews = Filament::getPlugin('afsdarif::filament-knowledge-base')->hasModalPreviews();
+    $hasSlideOverPreviews = Filament::getPlugin('afsdarif::filament-knowledge-base')->hasSlideOverPreviews();
+    $hasModalTitleBreadcrumbs = Filament::getPlugin('afsdarif::filament-knowledge-base')->hasModalTitleBreadcrumbs();
+    $target = Filament::getPlugin('afsdarif::filament-knowledge-base')->shouldOpenDocumentationInNewTab() ? '_blank' : '_self';
+    $articleClass = \Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase::panel()->getArticleClass();
 @endphp
 
 <div @class([
