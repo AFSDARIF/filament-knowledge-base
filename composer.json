@@ -1,12 +1,13 @@
 {
-    "name": "guava/filament-knowledge-base",
+    "name": "afsdarif/filament-knowledge-base",
     "description": "A filament plugin that adds a knowledge base and help to your filament panel(s).",
     "keywords": [
         "Guava",
         "laravel",
-        "filament-knowledge-base"
+        "filament-knowledge-base",
+        "afsdarif"
     ],
-    "homepage": "https://github.com/guava/filament-knowledge-base",
+    "homepage": "https://github.com/afsdarif/filament-knowledge-base",
     "license": "MIT",
     "authors": [
         {
@@ -16,15 +17,15 @@
         }
     ],
     "require": {
-        "php": "^8.1|^8.2",
-        "calebporzio/sushi": "^2.5",
-        "filament/filament": "^3.2|^3.3",
-        "illuminate/contracts": "^10.0|^11.0|^12.0",
-        "league/commonmark": "^2.4",
-        "n0sz/commonmark-marker-extension": "^1.0",
-        "spatie/laravel-package-tools": "^1.14.0",
-        "spatie/php-structure-discoverer": "^2.1",
-        "symfony/yaml": "^7.0"
+        "php": "^8.2",
+        "calebporzio/sushi": "^2.5.3",
+        "filament/filament": "^4.0",
+        "illuminate/contracts": "^12.20.0",
+        "league/commonmark": "^2.7.0",
+        "n0sz/commonmark-marker-extension": "^1.0.1",
+        "spatie/laravel-package-tools": "^1.92.6",
+        "spatie/php-structure-discoverer": "^2.3.1",
+        "symfony/yaml": "^7.3.1"
     },
     "suggest": {
         "spatie/shiki-php": "Required to support syntax highlighting"
@@ -46,13 +47,13 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Guava\\FilamentKnowledgeBase\\": "src/",
-            "Guava\\FilamentKnowledgeBase\\Database\\Factories\\": "database/factories/"
+            "Afsdarif\\FilamentKnowledgeBase\\": "src/",
+            "Afsdarif\\FilamentKnowledgeBase\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Guava\\FilamentKnowledgeBase\\Tests\\": "tests/",
+            "Afsdarif\\FilamentKnowledgeBase\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -84,10 +85,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Guava\\FilamentKnowledgeBase\\KnowledgeBaseServiceProvider"
+                "Afsdarif\\FilamentKnowledgeBase\\KnowledgeBaseServiceProvider"
             ],
             "aliases": {
-                "KnowledgeBase": "Guava\\FilamentKnowledgeBase\\Facades\\KnowledgeBase"
+                "KnowledgeBase": "Afsdarif\\FilamentKnowledgeBase\\Facades\\KnowledgeBase"
             }
         }
     },

@@ -2,8 +2,8 @@
 
 namespace DummyNamespace;
 
-use Guava\FilamentKnowledgeBase\Documentation;
-use Guava\FilamentKnowledgeBase\Facades\FilamentKnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Documentation;
+use Afsdarif\FilamentKnowledgeBase\Facades\FilamentKnowledgeBase;
 use Illuminate\Database\Eloquent\Model;
 
 class DummyClass extends Documentation

@@ -1,6 +1,6 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Filament\Panels;
+namespace Afsdarif\FilamentKnowledgeBase\Filament\Panels;
 
 use Composer\InstalledVersions;
 use Exception;
@@ -17,16 +17,16 @@ use Filament\Support\Assets\Theme;
 use Filament\Support\Enums\Platform;
 use Filament\View\PanelsRenderHook;
 use Filament\Widgets\AccountWidget;
-use Guava\FilamentKnowledgeBase\Concerns\CanDisableBackToDefaultPanelButton;
-use Guava\FilamentKnowledgeBase\Concerns\CanDisableBreadcrumbs;
-use Guava\FilamentKnowledgeBase\Concerns\CanDisableDefaultClasses;
-use Guava\FilamentKnowledgeBase\Concerns\HasAnchorSymbol;
-use Guava\FilamentKnowledgeBase\Concerns\HasArticleClass;
-use Guava\FilamentKnowledgeBase\Contracts\Documentable;
-use Guava\FilamentKnowledgeBase\Documentation;
-use Guava\FilamentKnowledgeBase\Enums\TableOfContentsPosition;
-use Guava\FilamentKnowledgeBase\Facades\KnowledgeBase;
-use Guava\FilamentKnowledgeBase\Filament\Resources\DocumentationResource;
+use Afsdarif\FilamentKnowledgeBase\Concerns\CanDisableBackToDefaultPanelButton;
+use Afsdarif\FilamentKnowledgeBase\Concerns\CanDisableBreadcrumbs;
+use Afsdarif\FilamentKnowledgeBase\Concerns\CanDisableDefaultClasses;
+use Afsdarif\FilamentKnowledgeBase\Concerns\HasAnchorSymbol;
+use Afsdarif\FilamentKnowledgeBase\Concerns\HasArticleClass;
+use Afsdarif\FilamentKnowledgeBase\Contracts\Documentable;
+use Afsdarif\FilamentKnowledgeBase\Documentation;
+use Afsdarif\FilamentKnowledgeBase\Enums\TableOfContentsPosition;
+use Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Filament\Resources\DocumentationResource;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;

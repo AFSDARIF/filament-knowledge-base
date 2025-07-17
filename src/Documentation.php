@@ -1,8 +1,8 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase;
+namespace Afsdarif\FilamentKnowledgeBase;
 
-use Guava\FilamentKnowledgeBase\Contracts\Documentable;
+use Afsdarif\FilamentKnowledgeBase\Contracts\Documentable;
 
 abstract class Documentation implements Documentable
 {

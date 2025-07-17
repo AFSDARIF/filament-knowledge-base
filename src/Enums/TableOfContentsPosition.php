@@ -1,6 +1,6 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Enums;
+namespace Afsdarif\FilamentKnowledgeBase\Enums;
 
 use Filament\Pages\SubNavigationPosition;
 

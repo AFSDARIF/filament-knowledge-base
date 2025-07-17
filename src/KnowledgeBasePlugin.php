@@ -1,13 +1,13 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase;
+namespace Afsdarif\FilamentKnowledgeBase;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 use Filament\View\PanelsRenderHook;
-use Guava\FilamentKnowledgeBase\Concerns\CanDisableKnowledgeBasePanelButton;
-use Guava\FilamentKnowledgeBase\Concerns\CanDisableModalLinks;
-use Guava\FilamentKnowledgeBase\Concerns\HasModalPreviews;
+use Afsdarif\FilamentKnowledgeBase\Concerns\CanDisableKnowledgeBasePanelButton;
+use Afsdarif\FilamentKnowledgeBase\Concerns\CanDisableModalLinks;
+use Afsdarif\FilamentKnowledgeBase\Concerns\HasModalPreviews;
 use Illuminate\Support\Facades\Blade;
 
 class KnowledgeBasePlugin implements Plugin
@@ -60,7 +60,7 @@ class KnowledgeBasePlugin implements Plugin
 
     public function getId(): string
     {
-        return 'guava::filament-knowledge-base';
+        return 'afsdarif::filament-knowledge-base';
     }
 
     public function register(Panel $panel): void
@@ -85,8 +85,8 @@ class KnowledgeBasePlugin implements Plugin
                         fn (): string => view('filament-knowledge-base::sidebar-action', [
                             'label' => __('filament-knowledge-base::translations.knowledge-base'),
                             'icon' => 'heroicon-o-book-open',
-                            'url' => \Guava\FilamentKnowledgeBase\Facades\KnowledgeBase::url(
-                                \Guava\FilamentKnowledgeBase\Facades\KnowledgeBase::panel()
+                            'url' => \Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase::url(
+                                \Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase::panel()
                             ),
                             'shouldOpenUrlInNewTab' => $this->shouldOpenDocumentationInNewTab(),
                         ])

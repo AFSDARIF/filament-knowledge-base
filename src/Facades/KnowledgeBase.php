@@ -1,16 +1,16 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Facades;
+namespace Afsdarif\FilamentKnowledgeBase\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Guava\FilamentKnowledgeBase\KnowledgeBase
+ * @see \Afsdarif\FilamentKnowledgeBase\KnowledgeBase
  */
 class KnowledgeBase extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Guava\FilamentKnowledgeBase\KnowledgeBase::class;
+        return \Afsdarif\FilamentKnowledgeBase\KnowledgeBase::class;
     }
 }

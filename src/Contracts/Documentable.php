@@ -1,6 +1,6 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Contracts;
+namespace Afsdarif\FilamentKnowledgeBase\Contracts;
 
 interface Documentable
 {

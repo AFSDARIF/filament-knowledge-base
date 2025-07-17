@@ -1,12 +1,13 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Filament\Resources;
+namespace Afsdarif\FilamentKnowledgeBase\Filament\Resources;
 
 use Filament\Resources\Resource;
-use Guava\FilamentKnowledgeBase\Facades\KnowledgeBase;
-use Guava\FilamentKnowledgeBase\Filament\Pages\ViewDocumentation;
+use Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Filament\Pages\ViewDocumentation;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
+use BackedEnum;
 
 class DocumentationResource extends Resource
 {
@@ -20,7 +21,7 @@ class DocumentationResource extends Resource
         return ['title', 'content'];
     }
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static string | BackedEnum | null $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function getPages(): array
     {

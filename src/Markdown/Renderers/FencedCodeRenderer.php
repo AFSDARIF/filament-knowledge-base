@@ -1,6 +1,6 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Markdown\Renderers;
+namespace Afsdarif\FilamentKnowledgeBase\Markdown\Renderers;
 
 use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
 use League\CommonMark\Extension\CommonMark\Renderer\Block\FencedCodeRenderer as BaseRenderer;

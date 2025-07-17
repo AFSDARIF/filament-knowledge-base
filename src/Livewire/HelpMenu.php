@@ -1,6 +1,6 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Livewire;
+namespace Afsdarif\FilamentKnowledgeBase\Livewire;
 
 use Arr;
 use Filament\Actions\ActionGroup;
@@ -10,10 +10,10 @@ use Filament\Facades\Filament;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Resources\Pages\Page;
-use Guava\FilamentKnowledgeBase\Actions\HelpAction;
-use Guava\FilamentKnowledgeBase\Contracts\Documentable;
-use Guava\FilamentKnowledgeBase\Contracts\HasKnowledgeBase;
-use Guava\FilamentKnowledgeBase\Facades\KnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Actions\HelpAction;
+use Afsdarif\FilamentKnowledgeBase\Contracts\Documentable;
+use Afsdarif\FilamentKnowledgeBase\Contracts\HasKnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase;
 use Livewire\Component;
 
 class HelpMenu extends Component implements HasActions, HasForms
@@ -29,7 +29,7 @@ class HelpMenu extends Component implements HasActions, HasForms
     {
         $controller = request()->route()->controller;
 
-        $this->shouldOpenDocumentationInNewTab = Filament::getPlugin('guava::filament-knowledge-base')->shouldOpenDocumentationInNewTab();
+        $this->shouldOpenDocumentationInNewTab = Filament::getPlugin('afsdarif::filament-knowledge-base')->shouldOpenDocumentationInNewTab();
 
         $this->documentation = Arr::wrap(match (true) {
             $controller instanceof HasKnowledgeBase => $controller::getDocumentation(),

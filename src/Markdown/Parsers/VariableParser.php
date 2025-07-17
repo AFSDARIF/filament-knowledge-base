@@ -1,6 +1,6 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Markdown\Parsers;
+namespace Afsdarif\FilamentKnowledgeBase\Markdown\Parsers;
 
 use Illuminate\Database\Eloquent\Model;
 use League\CommonMark\Node\Inline\Text;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Database\Factories;
+namespace Afsdarif\FilamentKnowledgeBase\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

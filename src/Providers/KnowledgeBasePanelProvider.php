@@ -1,10 +1,10 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Providers;
+namespace Afsdarif\FilamentKnowledgeBase\Providers;
 
 use Filament\Panel;
 use Filament\PanelProvider;
-use Guava\FilamentKnowledgeBase\Filament\Panels\KnowledgeBasePanel;
+use Afsdarif\FilamentKnowledgeBase\Filament\Panels\KnowledgeBasePanel;
 
 class KnowledgeBasePanelProvider extends PanelProvider
 {

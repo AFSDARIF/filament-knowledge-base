@@ -1,13 +1,13 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Markdown;
+namespace Afsdarif\FilamentKnowledgeBase\Markdown;
 
 use Arr;
-use Guava\FilamentKnowledgeBase\Facades\KnowledgeBase;
-use Guava\FilamentKnowledgeBase\Filament\Panels\KnowledgeBasePanel;
-use Guava\FilamentKnowledgeBase\Markdown\Parsers\IncludeParser;
-use Guava\FilamentKnowledgeBase\Markdown\Renderers\FencedCodeRenderer;
-use Guava\FilamentKnowledgeBase\Markdown\Renderers\ImageRenderer;
+use Afsdarif\FilamentKnowledgeBase\Facades\KnowledgeBase;
+use Afsdarif\FilamentKnowledgeBase\Filament\Panels\KnowledgeBasePanel;
+use Afsdarif\FilamentKnowledgeBase\Markdown\Parsers\IncludeParser;
+use Afsdarif\FilamentKnowledgeBase\Markdown\Renderers\FencedCodeRenderer;
+use Afsdarif\FilamentKnowledgeBase\Markdown\Renderers\ImageRenderer;
 use InvalidArgumentException;
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Environment\EnvironmentBuilderInterface;

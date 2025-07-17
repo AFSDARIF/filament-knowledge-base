@@ -1,6 +1,6 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Commands;
+namespace Afsdarif\FilamentKnowledgeBase\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Facades\App;

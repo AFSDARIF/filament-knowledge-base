@@ -1,6 +1,6 @@
 <?php
 
-namespace Guava\FilamentKnowledgeBase\Concerns;
+namespace Afsdarif\FilamentKnowledgeBase\Concerns;
 
 use Closure;
 
